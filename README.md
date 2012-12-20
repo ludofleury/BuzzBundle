@@ -79,6 +79,11 @@ $client->addListener($profilerListener);
 * The Message (request/response) from Buzz are really simple and so the informations in the profiler.
 * If you need a rock-solid HTTP client, try [Guzzle](http://guzzlephp.org/) and... the [Playbloom GuzzleBundle](https://github.com/ludofleury/GuzzleBundle) !
 
+## Licence
+
+This bundle is under the MIT license. See the complete license in the bundle:
+
+    Resources/meta/LICENSE
 
 ## Credits
 
