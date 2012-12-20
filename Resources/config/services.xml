@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="playbloom_buzz.browser.listener.logger" class="Playbloom\Bundle\BuzzBundle\Log\BuzzLoggerListener" public="false">
+            <tag name="monolog.logger" channel="buzz" />
+            <argument type="service" id="logger"/>
+            <tag name="playbloom_buzz.browser.listener" />
+        </service>
+
+        <service id="playbloom_buzz.browser.listener.profiler" class="Buzz\Listener\HistoryListener" public="false">
+            <argument type="service" id="playbloom_buzz.browser.listener.profiler_journal" />
+        </service>
+
+        <service id="playbloom_buzz.browser.listener.profiler_journal" class="Buzz\Listener\History\Journal" public="false">
+            <call method="setLimit">
+                <argument>100</argument>
+            </call>
+        </service>
+    </services>
+
+</container>

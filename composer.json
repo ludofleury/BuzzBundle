@@ -1,0 +1,24 @@
+{
+    "name": "playbloom/buzz-bundle",
+    "description": "Provide Symfony2 web profiler for Buzz",
+    "keywords": ["buzz", "Symfony2", "profiler"],
+    "homepage": "https://github.com/ludofleury/BuzzBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Ludovic Fleury",
+            "email": "ludo.fleury@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/web-profiler-bundle": ">=2.1.0,<2.3-dev",
+        "kriswallsmith/buzz": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Playbloom\\Bundle\\BuzzBundle": "" }
+    },
+    "target-dir": "Playbloom/Bundle/BuzzBundle"
+}

@@ -1,0 +1,61 @@
+<div id="request_{{ index }}" class="tab-pane active">
+    <h5>Time</h5>
+    <table>
+        <tbody>
+            <tr>
+                <th>Duration total</th>
+                <td>{{ (time.total * 1000)|number_format(0, '', '') }} <small>ms</small></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h5>Informations</h5>
+    <table>
+        <tbody>
+            <tr>
+                <th>Method</th>
+                <td>{{ request.method }}</td>
+            </tr>
+            <tr>
+                <th>Protocol</th>
+                <td>{% if request.isSecure %}https{% else %}http{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Host</th>
+                <td>{{ request.host }}</td>
+            </tr>
+            <tr>
+                <th>Path</th>
+                <td>{{ request._url.path }}</td>
+            </tr>
+            <tr>
+                <th>Query</th>
+                <td>{{ request._url.queryString }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h5>Headers</h5>
+    <table>
+        <tbody>
+        {% for header,value in request.headers %}
+            <tr>
+                <th>{{ header }}</th>
+                <td>{{ value|join('<strong>, </strong>') }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h5>Query Parameters</h5>
+    <table>
+        <tbody>
+        {% for name,parameter in request._url.getQueryString %}
+            <tr>
+                <th>{{ name }}</th>
+                <td>{{ parameter }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
