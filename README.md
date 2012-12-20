@@ -7,9 +7,9 @@ It may be improved with some features from the GuzzleBundle, yet I do not provid
 * The basic logger use the default Symfony app logger, it's safe to use in your production environement.
 * The advanced profiler is for debug purposes and will display a dedicated report available in the toolbar and in the Symfony Web Profiler
 
-<img src="https://www.evernote.com/shard/s282/sh/0d175de7-29b6-4bd6-b0b0-4d14f7447489/ca61946cc7a5eeeb07bfe820c9037019/res/170ac2f9-0dcb-4d39-b73d-7fc6a6ce2cfa/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel">
-<img src="https://www.evernote.com/shard/s282/sh/5f8d3d3b-8f8f-411b-b41e-4ed399dce6e9/796213f2dfc5d3b489f95a9c5646103f/res/d55806d9-8055-40b2-8fd7-d1e1bf1b456d/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel - request details">
-<img src="https://www.evernote.com/shard/s282/sh/a5f1dc50-e4f7-4048-a84e-97f9c2190f30/1327fee5e07958e14d412351cc4917ae/res/99d80459-6a41-4faf-a7af-72710eab0e36/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel - response details">
+<img src="https://www.evernote.com/shard/s282/sh/277e57ef-f26a-439d-a5f9-8a0751851e20/3df8314d3e5cf04d365a8917fabe55ba/res/c44d1991-8877-4e96-8e4e-6bea7e8bcecd/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel">
+<img src="https://www.evernote.com/shard/s282/sh/2107da61-7004-4af3-9f1e-e3d391ea7cc2/e7d12a0bf28b3446e47c7ab6233893e1/res/80659fd4-e159-478a-9835-d32fa7763fab/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel - request details">
+<img src="https://www.evernote.com/shard/s282/sh/9ae49202-7697-4cf2-8dce-4db74e8470c7/a0d8616e44e913ae803e2de52fb76e82/res/e7600916-e62a-4ef7-bcca-c55b551f8f92/skitch.png" witdh="280" height="175" alt="Buzz Symfony web profiler panel - response details">
 
 ## Installation
 
