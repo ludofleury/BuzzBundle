@@ -41,7 +41,7 @@ class BuzzDataCollector extends DataCollector
      */
     public function collect(Request $request, Response $response, \Exception $exception = null)
     {
-        foreach($this->profiler as $call) {
+        foreach($this->profiler->getEntries() as $call) {
             $error = false;
             $request = $call->getRequest();
 
