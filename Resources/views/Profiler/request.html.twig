@@ -38,9 +38,8 @@
     <h5>Headers</h5>
     <table>
         <tbody>
-        {% for header,value in request.headers %}
+        {% for value in request.headers %}
             <tr>
-                <th>{{ header }}</th>
                 <td>{{ value|join('<strong>, </strong>') }}</td>
             </tr>
         {% endfor %}
