@@ -73,11 +73,11 @@ $client->addListener($profilerListener);
 ?>
 ```
 
-## Limitation
+## Limitations
 
 * It doesn't handle the logging/profiling for a Buzz Client, you need to use a Buzz browser (buzz implementation limitation).
-* The Message (request/response) from Buzz are really simple and so the information in the profiler.
-* If you need a rock-solid HTTP client, try Guzzle and... the Playbloom GuzzleBundle !
+* The Message (request/response) from Buzz are really simple and so the informations in the profiler.
+* If you need a rock-solid HTTP client, try [Guzzle](http://guzzlephp.org/) and... the [Playbloom GuzzleBundle](https://github.com/ludofleury/GuzzleBundle) !
 
 
 ## Credits
